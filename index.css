@@ -1,0 +1,139 @@
+/* RESET e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* MENU (fixo no topo) */
+.menu {
+  background-color: #2C2C2C;
+  height: 60px;
+  padding: 0 1.5rem;
+  line-height: 60px;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  height: 100%;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  padding: 6px 8px;
+  transition: color .2s, transform .12s;
+}
+.menu a:hover { color: #f0a500; transform: translateY(-2px); }
+
+/* Evita conteúdo escondido atrás do menu fixo */
+body { padding-top: 60px; background:#fff; color:#111; }
+
+/* HERO (banner full screen) */
+.hero {
+  height: 100vh;
+  background-image: url('pizza1.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
+  z-index: 1;
+}
+.hero-text { position: relative; z-index: 2; text-align: center; padding: 0 1rem; }
+.hero-text h1 { font-size: clamp(2rem, 4vw, 4rem); font-weight: 300; margin-bottom: .6rem; }
+.hero-text p { margin-bottom: 1rem; opacity: .95; }
+.btn { display:inline-block; background:#f0a500; color:#111; padding:.6rem 1rem; border-radius:.4rem; font-weight:700; text-decoration:none; }
+
+/* CARDÁPIO (grid) */
+#cardapio { background:#fff; padding: 4rem 2rem; text-align:center; }
+#cardapio > h2 { font-size:2rem; margin-bottom:2.5rem; font-weight:700; }
+
+/* Grid de cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: .6rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+}
+.card__img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;        /* caixa com proporção fixa (ajuste se quiser) */
+  object-fit: cover;          /* ainda preenche, mas com aspecto mais controlado */
+  object-position: center 40%;/* desloca o ponto focal um pouco pra cima */
+  display: block;
+}
+
+.card__content { padding:.9rem; background:#f5f5f5; flex:1; }
+.card__title { font-size:.95rem; margin:0 0 .4rem; font-weight:700; }
+.card__desc { font-size:.85rem; color:#333; margin:0; }
+
+/* SOBRE NÓS (faixa) */
+.about { height:180px; background-image:url('pizza3.jpg'); background-size:cover; background-position:center; position:relative; display:flex; align-items:center; justify-content:center; color:#fff; margin-top:3rem; }
+.about::before { content:""; position:absolute; inset:0; background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)); z-index:1; }
+.about__content { position:relative; z-index:2; text-align:center; max-width:1000px; padding:0 1rem; }
+.about__content h2 { margin:0; font-size:1.8rem; font-weight:700; }
+.about__content p { margin-top:.6rem; opacity:.95; }
+
+/* CONTATO */
+#contato { padding:3rem 2rem; text-align:center; }
+.contato-info { display:flex; justify-content:center; align-items:flex-start; gap:25px; flex-wrap:wrap; text-align:left; max-width:1100px; margin:0 auto; }
+.contato-info div { font-size:14px; line-height:1.4; }
+.contato-info a { color: orange; text-decoration:none; }
+.contato-info a:hover { text-decoration:underline; }
+
+.btn{
+  cursor:pointer;
+  transition: 0.3s;
+}
+
+/* RODAPÉ */
+footer { text-align:center; background:#2C2C2C; color: gold; height: 48px; padding: 10px 0; line-height: 28px; font-size: 14px; margin-top:2rem; }
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .card__img { height:150px; }
+}
+@media (max-width: 768px) {
+  .menu ul { gap:12px; }
+  .menu { height:50px; line-height:50px; }
+  body { padding-top:50px; }
+  .cards { grid-template-columns: 1fr; padding:0 1.25rem; }
+  .card__img { height:220px; }
+  .about { height:220px; }
+}
