@@ -1,174 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Alessio's</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Exercicio 3</title>
   </head>
   <body>
     <header>
-      <nav class="menu">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#cardapio">Cardápio</a></li>
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+      <h1>Bookshelf</h1>
+      <br>
+      <p>Explore nosso catalogo e mergule em historias incriveis</p>
     </header>
+    <br />
+    <hr />
+    <br>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="hero-text">
-        <h1>Bem-Vindo à Alessio's</h1>
-        <p>Saborosas pizzas feitas especialmente para você</p>
-        <a class="btn" href="#cardapio">Ver Cardápio</a>
-      </div>
+    <section>
+      <h2>Leia a qualquer hora, em qualquer lugar</h2>
+      <br>
+      <p>
+        aproveite o acesso instantaneo a uma ampla variedade de livros em seu
+        dispositivo favorito
+      </p>
     </section>
+    <br>
 
-    <!-- CARDÁPIO (grid de cards) -->
-    <section id="cardapio" aria-label="Cardápio">
-      <h2>Cardápio</h2>
+    <nav class="button black">
+      <input type="button" value="INSCREVA-SE" class="INSCREVASE" />
+    </nav>
 
-      <div class="cards">
-        <!-- Repita este bloco <article> para cada pizza -->
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Margherita" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Margherita</h3>
-            <p class="card__desc"><em>Molho de Tomate, mussarela, manjericão fresco.</em></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Pepperoni" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Pepperoni</h3>
-            <p class="card__desc"><em>Molho de Tomate, pepperoni, queijo mussarela.</em></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Quatro Queijos" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Quatro Queijos</h3>
-            <p class="card__desc"><em>Molho de tomate, mussarela, parmesão, gorgonzola, provolone.</em></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Calabresa" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Calabresa</h3>
-            <p class="card__desc"><em>Molho de tomate, calabresa, cebola, queijo mussarela.</em></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Vegetariana" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Vegetariana</h3>
-            <p class="card__desc"><em>Molho de Tomate, pimentões, cogumelos, azeitonas, queijo mussarela.</em></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Frango com Catupiry" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Frango com Catupiry</h3>
-            <p class="card__desc"><em>Molho de Tomate, frango desfiado, catupiry, milho, queijo mussarela.</em></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Portuguesa" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Portuguesa</h3>
-            <p class="card__desc"><em>Molho de Tomate, presunto, ovos, cebola, azeitonas, queijo mussarela.</em></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Supreme" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Supreme</h3>
-            <p class="card__desc"><em>Molho de Tomate, pepperoni, pimentões, cebola roxa, azeitonas, queijo mussarela.</em></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Tropical" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Tropical</h3>
-            <p class="card__desc"><em>Molho de Tomate, presunto, abacaxi, queijo mussarela.</em></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Margherita Especial" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Margherita Especial</h3>
-            <p class="card__desc"><em>Molho de Tomate, mussarela de búfala, tomate fresco, manjericão, azeite de oliva.</em></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Carne de Sol" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Carne de Sol</h3>
-            <p class="card__desc"><em>Molho de Tomate, carne de sol desfiada, cebola roxa, queijo mussarela.</em></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="pizza2.jpg" alt="Pizza Caprese" class="card__img">
-          <div class="card__content">
-            <h3 class="card__title">Pizza Caprese</h3>
-            <p class="card__desc"><em>Molho de Tomate, tomate fresco, mussarela de búfala, manjericão, azeite de oliva.</em></p>
-          </div>
-        </article>
-      </div>
+    <section>
+      <img src="exercicio3.png" />
+      <br>
+      <h2>Explore Nosso Catalogo</h2>
+      <br>
+      <p>
+        Descubra milhares de livros de diversos generos, do romance a ficção
+        cientifica
+      </p>
     </section>
+    <br>
 
-    <!-- SOBRE NÓS (faixa com imagem + overlay) -->
-    <section class="about" id="sobre" aria-label="Sobre Nós">
-      <div class="about__content">
-        <h2>Sobre Nós</h2>
-        <p>Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com ingredientes frescos e receitas exclusivas.</p>
-      </div>
+    <section class="botoes">
+      <input type="button" value="Romance" class="romance" />
+      <input type="button" value="Ficção Científica" class="ficcao"/>
+      <input type="button" value="Mistério" class="misterio"/>
+      <input type="button" value="Fantasia" class="fantasia"/>
+      <input type="button" value="Suspense" class="suspense"/>
+      <input type="button" value="VER MAIS" class="meu-botao" />
     </section>
+    <br>
 
-    <!-- CONTATO -->
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Entre em contato conosco para fazer pedidos ou tirar suas dúvidas</p>
-
-      <section class="contato-info" aria-label="Informações de Contato">
-        <div>
-          <strong>Endereço:</strong> Avenida Onze de Outubro, nº 123<br />
-          Centro, Cidade Qualquer/RJ CEP: 12345-678
-        </div>
-
-        <div>
-          <strong>Telefone:</strong> (11) 5555-5555<br />
-          <strong>E-mail:</strong>
-          <a href="mailto:contato@alessios.pizza">contato@alessios.pizza</a>
-        </div>
-
-        <div>
-          <strong>Horário de Funcionamento:</strong><br />
-          Segunda a Sábado: 11h00 às 23h00 - Domingo: 16h00 às 23h00
-        </div>
-      </section>
-
-      <div style="text-align:center; margin-top:1.5rem;">
-        <button class="btn">Peça agora mesmo</button>
-      </div>
+    <section>
+      <h2>Comece Sua Aventura Literária</h2>
+      <br>
+      <p>Inscreva-se agora e disfrute de um mundo de historias emocionantes</p>
     </section>
+    <br>
+
+    <nav class="button black">
+      <input type="button" value="INSCREVA-SE" class="INSCREVASE" />
+    </nav>
+    <br>
 
     <footer>
-      <p>&copy; 2025 Alessio's Pizzaria</p>
+      <p>&copy; 2025 Bookshelf</p>
     </footer>
   </body>
 </html>

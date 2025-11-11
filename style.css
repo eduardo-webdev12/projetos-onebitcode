@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+}
+
+header > h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+}
+
+section > h2{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+section > p{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+nav{
+    text-align:center;
+}
+
+section > h2{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.botoes{
+    text-align: center;
+}
+
+footer{
+    background-color: #0b0b14;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 4px solid;
+}
+
+img{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+.INSCREVASE{
+    border-radius: 14px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 08px 14px;
+    text-align: center;
+    cursor:pointer;
+    font-family: "Noto Sans", sans-serif;
+    margin: 4px;
+}
+
+.meu-botao{
+    border-radius: 14px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 08px 14px;
+    text-align: center;
+    cursor:pointer;
+    font-family: "Noto Sans", sans-serif;
+    margin: 4px;
+}
+
+.romance{
+    border-radius: 14px;
+    font-size: 12px;
+    background-color: rgb(30, 160, 247);
+    color: white;
+    border: none;
+    padding: 08px 14px;
+    text-align: center;
+    cursor:pointer;
+    font-family: "Noto Sans", sans-serif;
+    margin: 4px;
+}
+
+.ficcao{
+    border-radius: 14px;
+    font-size: 12px;
+    background-color: rgb(30, 160, 247);
+    color: white;
+    border: none;
+    padding: 08px 14px;
+    text-align: center;
+    cursor:pointer;
+    font-family: "Noto Sans", sans-serif;
+    margin: 4px;
+}
+
+.misterio{
+    border-radius: 14px;
+    font-size: 12px;
+    background-color: rgb(30, 160, 247);
+    color: white;
+    border: none;
+    padding: 08px 14px;
+    text-align: center;
+    cursor:pointer;
+    font-family: "Noto Sans", sans-serif;
+    margin: 4px;
+}
+
+.fantasia{
+    border-radius: 14px;
+    font-size: 12px;
+    background-color: rgb(30, 160, 247);
+    color: white;
+    border: none;
+    padding: 08px 14px;
+    text-align: center;
+    cursor:pointer;
+    font-family: "Noto Sans", sans-serif;
+    margin: 4px;
+}
+
+.suspense{
+    border-radius: 14px;
+    font-size: 12px;
+    background-color: rgb(30, 160, 247);
+    color: white;
+    border: none;
+    padding: 08px 14px;
+    text-align: center;
+    cursor:pointer;
+    font-family: "Noto Sans", sans-serif;
+    margin: 4px;
+}
